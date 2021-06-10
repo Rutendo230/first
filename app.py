@@ -35,12 +35,9 @@ def hello():
         array1 = pd.to_numeric(array1)
         prediction = model.mp.predict([array1])
         prediction = int(prediction)
-    if prediction == 0:
-        s='No'
-    else:
-        s='Yes'
+    
          
-    return render_template('index.html', value=s)
+    return render_template('index.html')
 
 
 
